@@ -19,7 +19,7 @@ func main() {
 	templates = template.Must(template.ParseGlob("*.html"))
 
 	http.HandleFunc("/home", func(w http.ResponseWriter, r *http.Request) {
-		u := usuario{"Maria", "joao.pedro@gmail.com"}
+		u := usuario{"João", "joao.pedro@gmail.com"}
 		templates.ExecuteTemplate(w, "home.html", u)
 	})
 

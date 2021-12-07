@@ -43,7 +43,7 @@ func main() {
 	str2 := "Texto2"
 	fmt.Println(str2)
 
-	char := 'A'
+	char := 'B'
 	fmt.Println(char)
 
 	// FIM STRINGS

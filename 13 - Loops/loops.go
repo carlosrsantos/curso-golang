@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
@@ -21,27 +20,27 @@ func main() {
 	// 	time.Sleep(time.Second)
 	// }
 
-	// nomes := [3]string{"João", "Davi", "Lucas"}
+	nomes := [3]string{"João", "Davi", "Lucas"}
 
-	// for _, nome := range nomes {
-	// 	fmt.Println(nome)
-	// }
+	for _, nome := range nomes {
+		fmt.Println(nome)
+	}
 
-	// for indice, letra := range "PALAVRA" {
-	// 	fmt.Println(indice, string(letra))
-	// }
+	for indice, letra := range "PALAVRA" {
+		fmt.Println(indice, string(letra))
+	}
 
-	// usuario := map[string]string{
-	// 	"nome":      "Leonardo",
-	// 	"sobrenome": "Silva",
-	// }
+	usuario := map[string]string{
+		"nome":      "Leonardo",
+		"sobrenome": "Silva",
+	}
 
-	// for chave, valor := range usuario {
-	// 	fmt.Println(chave, valor)
-	// }
+	for chave, valor := range usuario {
+		fmt.Println(chave, valor)
+	}
 
-	for {
+	/* for {
 		fmt.Println("Executando infinitamente")
 		time.Sleep(time.Second)
-	}
+	} */
 }

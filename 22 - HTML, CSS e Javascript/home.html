@@ -20,7 +20,10 @@
 </head>
 
 <body>
-    <h2 id="texto"> Página Principal </h2>
+    <h2 id="texto"> Olá, {{ .Nome }} </h2>
+    
+    <h3 id="email" hidden>{{ .Email }}</h3>
+
 
     <button id="botao">Clique em Mim!</button>
 
@@ -28,9 +31,10 @@
         var botao = document.getElementById("botao");
         botao.onclick = function() {
             alert("Botão clicado com sucesso!");
-
+            var email = document.getElementById("email");
+            email.removeAttribute("hidden");
             var texto = document.getElementById("texto");
-            texto.innerText = "Novo texto!";
+            texto.innerText = "Tchau";
         }
     </script>
 
